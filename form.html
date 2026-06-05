@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="form-page">
+    <div class="form-box">
+      <h1>Job Application Form</h1>
+      <p>Fill the details below to apply</p>
+
+      <form id="applicationForm">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" />
+        <small id="nameError"></small>
+
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <small id="emailError"></small>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" />
+        <small id="phoneError"></small>
+
+        <label>Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+        <small id="messageError"></small>
+
+        <button type="submit">Submit Application</button>
+
+        <p id="successMessage"></p>
+      </form>
+
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
